@@ -8,8 +8,8 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "http://localhost:3000";,
-            "webRoot": "${workspaceFolder}/app",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
             "preLaunchTask": "startServer"
         },
         {
@@ -17,8 +17,8 @@
             "request": "attach",
             "name": "Attach to Chrome",
             "port": 9222,
-            "webRoot": "${workspaceFolder}/app",
-            "url": "http://localhost:3000";,
+            "webRoot": "${workspaceFolder}",
+            "url": "http://localhost:3000",
             "preLaunchTask": "startServer"
         }
     ]

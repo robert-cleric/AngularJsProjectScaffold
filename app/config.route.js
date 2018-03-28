@@ -20,13 +20,13 @@
                 url: '/',
                 controller: 'HomeController',
                 controllerAs: 'vm',
-                templateUrl: '/home/home.html'
+                templateUrl: 'app/home/home.html'
             })
             .state('details', {
                 url: '/details',
                 controller: 'DetailsController',
                 controllerAs: 'vm',
-                templateUrl: '/details/details.html',
+                templateUrl: 'app/details/details.html',
                 resolve: {
                     dogs: dogService
                 }
