@@ -1,0 +1,18 @@
+{
+    "name": "sometestapp",
+    "description": "",
+    "authors": [
+        "Robert Cleric"
+    ],
+    "license": "MIT",    
+    "dependencies": {
+        "angular": "^1.6.9",
+        "bootstrap": "3.3.6",
+        "angular-bootstrap": "^2.5.0",
+        "html5-boilerplate": "^6.0.1",
+        "jquery-ui": "^1.12.1",
+        "toastr": "^2.1.3",
+        "spin.js": "spin-js#^2.0.1",
+        "angular-ui-router": "^1.0.15"
+    }
+}

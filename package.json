@@ -1,0 +1,17 @@
+{
+    "name": "sampleappl",
+    "version": "2.0.0",
+    "description": "",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "postinstall": "bower install",
+        "start": "node_modules/.bin/lite-server"
+    },
+    "author": "Robert Cleric",
+    "devDependencies": {
+        "eslint": "^4.18.2",
+        "eslint-config-angular": "^0.5.0",
+        "eslint-plugin-angular": "^3.3.0",
+        "lite-server": "^2.3.0"
+    }
+}
