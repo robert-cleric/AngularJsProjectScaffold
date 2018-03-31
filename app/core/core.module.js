@@ -7,7 +7,8 @@
              * Reusable cross app code modules
              */
             'blocks.logger',
-            'blocks.exception'
+            'blocks.exception',
+            'templates'
 
         ]);
 

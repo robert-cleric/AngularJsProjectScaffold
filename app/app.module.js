@@ -9,7 +9,8 @@
         * Feature areas
         */
         'app.layout',
-        'app.details'
+        'app.details',
+    
         
     ])
         .controller('HomeController', HomeController);

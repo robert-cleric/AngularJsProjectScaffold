@@ -14,13 +14,15 @@
             display: none!important;
         }
     </style>
-
-    <link href="app/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    
+<!-- build:css -->
+    <link href="app/bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
     <link href="app/bower_components/html5-boilerplate/dist/css/normalize.css" rel="stylesheet"/>
     <link href="app/bower_components/html5-boilerplate/dist/css/main.css" rel="stylesheet"/>
-    <link href="app/bower_components/jquery-ui/themes/base/jquery-ui.min.css" rel="stylesheet" />
-    <link href="app/bower_components/toastr/toastr.min.css" rel="stylesheet" />
+    <link href="app/bower_components/jquery-ui/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="app/bower_components/toastr/toastr.css" rel="stylesheet" />
     <link href="app/content/style.css" rel="stylesheet"/> 
+<!-- endbuild -->    
     
 </head>
 
@@ -31,7 +33,7 @@
     </div>
 
 </body>
-
+<!-- build:vendor -->
 <!-- vendor -->
     <script src="app/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="app/bower_components/jquery-ui/jquery-ui.min.js"></script>
@@ -39,7 +41,9 @@
     <script src="app/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="app/bower_components/spin.js/spin.js"></script>
     <script src="app/bower_components/toastr/toastr.min.js"></script>
+<!-- endbuild -->
 
+<!-- build:app -->
 <!-- Bootstrappinp -->
     <script src="app/app.module.js"></script>
     <script src="app/config.route.js"></script>
@@ -70,6 +74,11 @@
     <script src="app/details/details.module.js"></script>
     <script src="app/details/details.controller.js"></script>
 
+<!-- templates -->
+    <script src="app/templates/templates.module.js"></script>
+<!-- endbuild -->
 
+<!-- build:templates -->
+<!-- endbuild -->
 
 </html>
