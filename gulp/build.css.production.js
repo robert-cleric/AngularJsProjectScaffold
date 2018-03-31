@@ -7,10 +7,11 @@ var gulp = require('gulp'),
 gulp.task('build:css:production', function () {
   gulp
     .src([
+        'app/bower_components/bootstrap/dist/css/bootstrap.css',
         'app/bower_components/html5-boilerplate/dist/css/normalize.css',
-        'app/bower_components/bootstrap/dist/css/bootstrap.min.css',
         'app/bower_components/html5-boilerplate/dist/css/main.css',
-        'app/bower_components/angular-toastr/dist/angular-toastr.css',
+        'app/bower_components/jquery-ui/themes/base/jquery-ui.css',
+        'app/bower_components/toastr/toastr.css',
         'app/content/style.css'
     ])
     .pipe(minifycss())

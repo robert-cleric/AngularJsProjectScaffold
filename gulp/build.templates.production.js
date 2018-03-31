@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 // Requires 'templates' module registered into the angular app
 
 gulp.task('build:templates:production', function () {
-  return gulp.src(['app/**/*.html', '!app/index.html', '!app/bower_components/**/*.*'])
-    .pipe(templateCache())
+  return gulp.src(['app/**/*.html', '!app/index.html', '!app/bower_components/**/*.html'])
+    .pipe(templateCache('templates.js', {root: 'app/'}))
     .pipe(gulp.dest('dist/js'));
 });

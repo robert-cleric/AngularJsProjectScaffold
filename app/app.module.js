@@ -10,7 +10,7 @@
         */
         'app.layout',
         'app.details',
-        //'app.layout2'
+    
         
     ])
         .controller('HomeController', HomeController);
