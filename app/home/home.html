@@ -10,6 +10,20 @@
 </div>
 
 <div class="well">
+    <h1>Get data (from another container)</h1>
+    <section>
+        <h4>Get Dogs</h4>
+        <label for="url">Type URL for API call:</label>
+        <input id="url" type="text" ng-model="vm.apiUrl">
+        <p>API URL {{vm.apiUrl}}</p>
+        <button ng-click="vm.getDogs()" class="btn btn-primary">Get Dogs</button>
+        <div ng-repeat="dog in vm.dogs">
+            {{dog}}
+        </div>
+    </section>
+</div>
+
+<div class="well">
     <h1>Test Toastr</h1>
     <!-- <section ng-controller="ToastrController as vm"> -->
     <section>

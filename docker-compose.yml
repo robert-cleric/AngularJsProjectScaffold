@@ -1,0 +1,32 @@
+
+# This runs and networks the Angular WEb App and the Web API
+version: "3"
+services:
+    #Angular web app
+    webapp:
+        image: angular-docker:latest
+        build: .
+        ports:
+          - "80:443"
+          #- "9011:443"
+        depends_on:
+          - webapi
+        links:
+          - webapi
+    #.Net core Web API service
+    webapi:
+      image: simple-web-api  
+
+
+# This just runs the Angular Web App
+# version: '2.1'
+# services:
+#   angular-docker:
+#     image: angular-docker
+#     build: .
+#     environment:
+#       NODE_ENV: production
+#     ports:
+#       - "80:443"
+#     ## set your startup file here
+#     command: [nginx, '-g', 'daemon off;']
