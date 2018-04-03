@@ -14,7 +14,7 @@ npm start
 ```
 docker build --rm -f Dockerfile -t angular-docker:latest .
 
-docker run --rm -d -p 443:443 -p 80:80 angular-docker:latest
+docker run --rm -d -p 80:443 angular-docker:latest
 ```
 
 ## To run Angular web app and .NET Web API
