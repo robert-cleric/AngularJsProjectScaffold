@@ -1,5 +1,25 @@
-# version: '2.1'
 
+# This runs and networks the Angular WEb App and the Web API
+version: "3"
+services:
+    #Angular web app
+    webapp:
+        image: angular-docker:latest
+        build: .
+        ports:
+          - "80:443"
+          #- "9011:443"
+        depends_on:
+          - webapi
+        links:
+          - webapi
+    #.Net core Web API service
+    webapi:
+      image: simple-web-api  
+
+
+# This just runs the Angular Web App
+# version: '2.1'
 # services:
 #   angular-docker:
 #     image: angular-docker
@@ -10,89 +30,3 @@
 #       - "80:443"
 #     ## set your startup file here
 #     command: [nginx, '-g', 'daemon off;']
-
-# version: '2'
-
-# networks:
-#     mynet:
-
-# services:
-#     #Angular web app
-#     webapp:
-#         image: angular-docker:latest
-#         build: .
-#         networks:
-#           - mynet
-#         ports:
-#           - "80:80"
-#         depends_on:
-#           - webapi
-#         # links:
-#         #   - webapi
-    
-#     #.Net core Web API service
-#     webapi:
-#       image: simple-web-api
-#       container_name: simple-web-api
-#       networks:
-#         - mynet
-#       #ports:
-#       #  - "8080:80"
-
-
-
-
-version: '2'
-
-services:
-    #Angular web app
-    webapp:
-        image: angular-docker:latest
-        build: .
-        ports:
-          - "80:80"
-        depends_on:
-          - webapi
-        links:
-          - webapi
-    
-    #.Net core Web API service
-    webapi:
-      image: simple-web-api
-
-
-# version: '2'
-
-# networks:
-#     aspnetcoreapp-network:
-#       driver: bridge
-
-# services:
-#     #.Net core Web API service
-#     webapi:
-#       image: simple-web-api  
-#       # ports:
-#       #   - "5000:80"
-#       # expose: 
-#       #   - 80
-#       networks: 
-#         - aspnetcoreapp-network
-
-#     #Angular web app
-#     webapp:
-#       image: angular-docker:latest
-#       build: .
-#       ports:
-#         - "80:80"
-#       links:
-#         - webapi
-#       depends_on:
-#         - webapi
-#       networks: 
-#         - aspnetcoreapp-network
-
-    
-        
-    
-    
-    

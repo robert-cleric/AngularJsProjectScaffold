@@ -26,10 +26,8 @@
         //throw new Error('Test exception');
 
         //Get data (from another container?)
-        vm.apiUrl = 'http://localhost:32770/api/values/dogs';
+        vm.apiUrl = '/api/values/dogs';
         vm.dogs = [];
-        //vm.otherUrl = $document.location.scheme + '://' + $document.location.hostname + ':3030';
-        vm.otherUrl = $location.$$protocol + '://' + $location.$$host + ':8080/api/values/dogs';
 
         vm.getDogs = function () {
             spinner.spinnerShow();
