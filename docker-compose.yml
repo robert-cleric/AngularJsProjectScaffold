@@ -1,5 +1,4 @@
-
-# This runs and networks the Angular WEb App and the Web API
+# This runs and networks the Angular Web App and the Web API
 version: "3"
 services:
     #Angular web app
@@ -7,7 +6,9 @@ services:
         image: angular-docker:latest
         build: .
         ports:
-          - "80:443"
+          - 80:80
+          - 443:443
+          # - "80:443"
           #- "9011:443"
         depends_on:
           - webapi
