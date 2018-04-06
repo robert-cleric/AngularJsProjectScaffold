@@ -23,3 +23,9 @@ docker run --rm -d -p 80:443 angular-docker:latest
 ```
 docker-compose up -d --build
 ```
+
+## To stop the Docker container
+- From the terminal
+```
+docker stop $(docker ps -aq)
+```
